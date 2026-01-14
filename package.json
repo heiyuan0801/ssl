@@ -1,0 +1,21 @@
+{
+  "name": "ssl-certificate-app",
+  "version": "1.0.0",
+  "description": "免费SSL证书在线申请系统",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.5",
+    "@arco-design/web-vue": "^2.54.0",
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.0",
+    "vite": "^5.0.0"
+  }
+}
+
