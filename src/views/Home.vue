@@ -388,6 +388,12 @@ const pageLoading = ref(false)
 onMounted(() => {
   if (API_CONFIG.API_KEY) {
     formData.apiKey = API_CONFIG.API_KEY
+  } else {
+    Notification.warning({
+      title: '缺少API密钥',
+      content: '未从环境变量读取到 VITE_API_KEY。请在项目根目录创建/修改 .env，设置 VITE_API_KEY=你的密钥，并重启 npm run dev。',
+      duration: 10000
+    })
   }
   loadCertList()
 })
